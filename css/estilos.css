@@ -1,0 +1,164 @@
+
+/* ----- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #3c3c3c;
+}
+
+header {
+    background-color: #0069c0;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+nav {
+    float: right;
+    width: 20%;
+    background-color: #2196f3;
+    position: -webkit-sticky;  /*Para fijar el menu al scroll*/
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav li{
+    padding: auto;  
+    /*padding: 0.5em;*/
+}
+
+nav li a{
+    /*display: inline-block;*/
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color:#2196f3;
+    padding: 10px;
+}
+
+nav li a:active {
+    color: #0069c0;
+}
+
+
+/*nav li ul li a {
+    text-align: right;
+    padding: 0px;
+}*/
+
+nav a:link, a:visited {
+    /*background-color: #f44336;*/
+    /*color: white;*/
+    /*padding: 14px 25px;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+}
+
+nav a:hover, a:active {
+    background-color: #929292;
+}
+
+/*div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}*/
+
+article {
+    float: left;
+    width: 80%;
+    /*background-color: #5e6266;*/
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table, th, td {
+    width:auto;
+    padding: 0.5em;
+}
+
+th {
+    background-color: #2196f3;
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset {
+    width: 300px;
+    margin: 1em 0em 0em 1em;
+}
+
+fieldset form {
+    padding: 1em 1em 1em 1em;
+}
+
+
+
+
+
+
+
+
+/* Estilo de footer */
+
+footer {
+    background-color: #5e6266;
+    padding: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0.5em;
+}
+
+footer a:hover {
+    background-color: #2196f3;
+}

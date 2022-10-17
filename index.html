@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requerimientos</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header id="inicio">
+        <h1>PRÁCTICA INTRO-FRONTEND</h1>
+    </header>
+
+    <section>
+
+        <article>
+            <h2>FASES REQUERIMIENTO DE SOFTWARE</h2>
+            <p>En el menú a continuación puede acceder y ver en detalle cada una de las fases del desarrrollo de la aplicación Web <strong>Abogabot</strong>, 
+            la cual es una asignación práctica del <strong>Curso LaunchX.</strong></p>
+        </article>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#descripcion">DESCRIPCIÓN</a></li>
+                <li><a href="#formalizacion">FORMALIZACIÓN</a>
+                    <!--<ul>
+                        <li><a href="">Usuario Solicitante</a></li>
+                        <li><a href="">Líder Funcional</a></li>
+                    </ul>-->
+                </li>
+                <li><a href="#analisis">ANÁLISIS</a>
+                <!--<ul>
+                        <li><a href="#modelo">Modelo de Negocios</a></li>
+                        <li><a href="#alcance">Alcance</a></li>
+                        <li><a href="#requerimientos">Requerimientos Funcionales</a></li>
+                    </ul>--> 
+                </li>
+                <li><a href="#planeacion">PLANEACIÓN</a></li>
+                <li><a href="#diseno">DISEÑO</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+        <article id="descripcion">
+            <h2>DESCRIPCIÓN GENERAL DEL REQUERIMIENTO</h2>
+            <table>
+                <tr>
+                    <th>Proyecto</th>
+                    <th>Nombre Requerimiento</th>
+                    <th>Fecha Solicitud</th>
+                    <th>Responsable de Solcitud</th>
+                    <th>Dependencia Solicitante</th>
+                    <th>Lider Funcional</th>
+
+                </tr>
+                <tr>
+                    <td>Abogabot</td>
+                    <td>Abogabot</td>
+                    <td>12-oct-2022</td>
+                    <td>Mission Commander</td>
+                    <td>LaunchX</td>
+                    <td>Ronald Borges</td>
+                </tr>
+            </table>
+        </article>  
+
+        <article id="formalizacion">
+            <h2>FASE DE FORMALIZACIÓN</h2>
+            <h3>Descripción de la Solicitud</h3>
+            <p id="usuariosol"><strong>Usuario Solicitante</strong></p>
+            <p>Pagina web para automatizar las solicitudes de demandas de sus clientes y que a su vez estos puedan tener información sobre el estado de su demanda durante todo el proceso jurídico. 
+
+                Además, se necesita un pagina de administración en donde se puedan monitorear los ingresos por este tipo de operaciones y sea posible comunicar al cliente el estatus de su demanda. 
+            </p>
+
+            <p id="liderfun"><strong>Lider Funcional</strong></p>
+            <p>El Despacho de Abogados requiere una aplicación web con 3 desarrollos resumidos a continuación: 
+                <ol>
+                    <li>Una página web para que los clientes que necesiten hacer una demanda la tramiten totalmente en línea sin intervención directa de los abogados del despacho.</li>
+                    <li>Un carro de compras (Pasarela de Pagos) para permitir el pago de las solicitudes en línea.</li>
+                    <li>Un módulo administrativo (Dasboard) para gestionar clientes, ingresos, demandas solicitadas y estatus de la mismas.</li>
+                </ol>
+            </p> 
+        </article> 
+
+        <article id="analisis">
+            <h2>ANALISIS DE REQUISITOS Y REQUERIMIENTOS </h2>
+
+            <table>
+                <tr>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Final</th>
+                </tr>
+                <tr>
+                    <td>01-Sep-2022</td>
+                    <td>30-Oct-2022</td>
+                </tr>
+            </table>
+
+            <article id="modelo">
+            <P><strong>Modelamiento del Negocio</strong></P>
+            <img src="./img/BMP - Abogabot.png" width="100%" alt="Modelo de Negocios">
+            </article>
+
+            <article id="alcance"> 
+                <h2>Alcance de la Solución</h2>
+                <p><strong>Incluye: </strong>
+                    <ul>
+                        <li>Página Web que puede ser accedida de PC, laptop o dispositivos móviles que permite gestionar demandas completamente en línea.</li>
+                        <li>Panel administrativo para que los encargados del sitio Web tengan información centralizada sobre los ingresos y clientes que solicitan este tipo de servicio y que permite a su vez comunicarles eficientemente las diferentes etapas de sus procesos jurídicos.</li>
+                    </ul>
+                </p>
+                <p><strong>No esta incluido: </strong>
+                    <ul>
+                        <li>El desarrollo no contempla usos fuera del país ni ofrece gestión para cualquier tipo de demandada, ya que por sus características, elementos y actores involucrados resultan realmente complejos de estandarizar en esta primera etapa del desarrollo. </li>
+                        <li>El sistema está diseñado solo para que el cliente haga su solicitud y espere por el resultado de la misma,</li>
+                        <li>Desarrollo de App exclusiva para teléfonos y dispositivos móviles con acceso a internet.</li>
+                        <li>El sistema no integra los procesos internos de gestión de las demandas por pare del equipo de la oficina de abogados.</li>
+                    </ul>
+                </p>
+            </article>
+
+            <article id="requerimientos">
+                <h2 >Requerimientos Funcionales y Criterios de Aceptación </h2>
+                <p>En las pruebas funcionales el Usario debe poder: 
+                    <ul>
+                        <li>Acceder desde cualquier dispositivo móvil.</li>
+                        <li>Registrarse rápidamente a través de correo electrónico o redes sociales.</li>
+                        <li>Completar un formulario y generar un borrador del documento de demanda para su revisión.</li>
+                        <li>Pagar en línea con instrumentos tradicionales de pago y Criptomonedas.</li>
+                        <li>Recibir confirmación inmediata de pago en correo o electrónico o vía de contacto elegido.</li>
+                        <li>Automáticamente y en línea una copia de documento de demanda, luego de hacer el pago correspondiente.</li>
+                        <li>Recibir convenientemente notificación del cambio de estatus de las demandas en su correo electrónico o dispositivo de contacto elegido.</li>
+                    </ul>
+                </p>
+    
+                <p>Por su parte, el Administrador del sitio debe poder: 
+                    <ul>
+                        <li>Acceder al Dasboard administrativo desde cualquier dispositivo móvil.</li>
+                        <li>Recibir notificaciones inmediatamente al concurrir el pago de las solicitudes en línea.</li>
+                        <li>Generar reportes y correlaciones de ingresos y clientes.</li>
+                        <li>Acceder y revisar el perfil de cada cliente.</li>
+                        <li>Editar el estatus de las solicitudes de demanda de los clientes.</li>
+                        <li>Generar automáticamente notificaciones para los clientes cuando se actualizan los estatus de sus demandas.</li>
+                    </ul>
+                </p>
+            </article>
+        </article> 
+
+        <article id="planeacion">
+            <h2>PLANEACIÓN</h2>
+            <h3>Pendiente</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugiat eos rem 
+                officiis itaque alias dolorem fugit beatae, voluptate, a iure culpa aliquid quae natus debitis iste nemo nihil impedit?
+            </p>
+        </article> 
+
+        <article id="diseno">
+            <h2>DISEÑO</h2>
+            <h3>Pendiente</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugiat eos rem 
+                officiis itaque alias dolorem fugit beatae, voluptate, a iure culpa aliquid quae natus debitis iste nemo nihil impedit?
+            </p>
+        </article> 
+
+        <article id="contacto">
+            <h2>Contacto</h2>
+            <fieldset>
+                <form action="">
+                    <label for="nombre">Nombre Apellido</label><br>
+                    <input type="text" id="nombre" name="nombre" size="30" placeholder="Nombre Apellido" autofocus required><br><br>
+                    <label for="email">Correo electrónico</label><br>
+                    <input type="email" id="email" name="email" placeholder="correo@dominio.com" required><br><br>
+                    <textarea name="message" rows="10" cols="30" maxlength="240" required>Escriba sus comentarios.</textarea><br><br>
+                    <input type="submit" value="Enviar datos"><br>
+                </form>
+            </fieldset>
+            <br>
+        </article>
+        
+    </section>
+
+    <footer>
+        <p><strong>Desarrollo &copy lx08550@innovaccion.mx</strong></p> 
+        <a href="#">LinkedIn</a>
+        <a href="#">Github</a>
+        <a href="#">Tiwtter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Tiktok</a>
+    </footer>
+
+</body>
+</html>
